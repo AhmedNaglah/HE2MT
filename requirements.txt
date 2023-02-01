@@ -1,0 +1,13 @@
+flask
+flask-sock
+flask-socketio
+flask-sqlalchemy
+shapely
+pandas
+numpy
+tensorflow
+opencv-python
+openslide-python
+importlib
+argparse
+matplotlib
