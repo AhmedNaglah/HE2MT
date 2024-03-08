@@ -1,10 +1,15 @@
-HE2MT: GANs based digital trichrome stained histology <img src="static/logo.png" width="400px" align="right" />
+HE2MT: Generative AI - GANs based digital trichrome stained histology 
 ----------------------------------------------------------------------------------------------------------------------
 Conditional GANs based system for fibrosis detection and quantification in Hematoxylin and Eosin whole slide images. 
 *Medical Image Analysis*
 
-Manuscript: https://www.sciencedirect.com/science/article/pii/S1361841522001840 \\
-Interactive Demo: \\
+<img src="static/logo.png" width="400px" align="right" />
+
+
+Manuscript: https://www.sciencedirect.com/science/article/pii/S1361841522001840
+
+Interactive Demo: Coming Soon
+
 Cite: Naglah, A., Khalifa, F., El-Baz, A. and Gondim, D., 2022. Conditional GANs based system for fibrosis detection and quantification in Hematoxylin and Eosin whole slide images. Medical Image Analysis, 81, p.102537.
 
 
@@ -25,6 +30,90 @@ conducted a range of experiments to evaluate the detected footprint of selected 
 uation includes both image similarity and semantic segmentation metrics. The proposed system achieved 
 enhanced results in the experiments with significant improvement over the state-of-the-art CycleGAN learning 
 style, and over direct prediction of fibrosis in HE without having the virtual MT step.  
+
+## Dependencies
+
+Linux
+
+Python 3.7
+
+See requirements.txt for python packages
+
+## Usage
+
+Step 1: Prepare the data folder (./path/to/data/folder/) as per the following structure
+
+For ConditionalGAN (Paired images for training), each image is horizontally concatenated input/output (side by side)
+
+```bash
+ROOT/
+    ├──DATASET/
+        ├── train
+                ├── patch_001.jpg
+                ├── patch_002.jpg
+                └── ...
+        └── val
+                ├── patch_001.pt
+                ├── patch_002.pt
+                └── ...
+        └── test
+                ├── patch_001.pt
+                ├── patch_002.pt
+                └── ...
+        └── monitor
+                ├── patch_001.pt
+                ├── patch_002.pt
+                └── ...
+```
+
+For CycleGAN (UnPaired images for training), unpaired images are stored in trainA and trainB folder
+
+```bash
+ROOT/
+    ├──DATASET/
+        ├── trainA
+                ├── patch_001.png
+                ├── patch_002.png
+                └── ...
+        ├── trainB
+                ├── patch_001.png
+                ├── patch_002.png
+                └── ...
+        └── val
+                ├── patch_001.pt
+                ├── patch_002.pt
+                └── ...
+        └── test
+                ├── patch_001.pt
+                ├── patch_002.pt
+                └── ...
+        └── monitor
+                ├── patch_001.pt
+                ├── patch_002.pt
+                └── ...
+```
+
+Step 2: Run the following command and adjust the hyper-parameters according to your dataset
+
+``` shell
+python3 ./runHE2MT.py \
+    --model condGAN1024 \
+    --epochs 6 \
+    --lamda 130 \
+    --monitor_freq 1epoch  \
+    --dataroot ./path/to/data/folder/ \
+    --experiment_id exp1 \
+    --modelsave_freq 1 \
+    --checkpoint_freq 1 
+```
+
+## SLURM Shell Script
+
+Please see runSlurm.sh to run using SLURM and ANACONDA Env on Compute Cluster
+
+## Contact
+
+Please contact me for any additional questions: ahmed.naglah@gmail.com
 
 
 ## References
