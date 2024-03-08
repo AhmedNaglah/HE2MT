@@ -8,7 +8,7 @@ Conditional GANs based system for fibrosis detection and quantification in Hemat
 
 Manuscript: https://www.sciencedirect.com/science/article/pii/S1361841522001840
 
-Interactive Demo: Coming Soon
+Interactive Demo: Coming Back Soon
 
 Cite: Naglah, A., Khalifa, F., El-Baz, A. and Gondim, D., 2022. Conditional GANs based system for fibrosis detection and quantification in Hematoxylin and Eosin whole slide images. Medical Image Analysis, 81, p.102537.
 
