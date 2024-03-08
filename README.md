@@ -41,6 +41,8 @@ See requirements.txt for python packages
 
 ## Usage
 
+This repository containes the codebase for model training, based on TensorFlow implementations of Conditional GANs and Cycle GANs using a range of image sizes (inputs/outputs) to be used for an ensemble learning pipeline similar to what is described in the manuscript.
+
 Step 1: Prepare the data folder (./path/to/data/folder/) as per the following structure
 
 For ConditionalGAN (Paired images for training), each image is horizontally concatenated input/output (side by side)
@@ -53,16 +55,16 @@ ROOT/
                 ├── patch_002.jpg
                 └── ...
         └── val
-                ├── patch_001.pt
-                ├── patch_002.pt
+                ├── patch_001.jpg
+                ├── patch_002.jpg
                 └── ...
         └── test
-                ├── patch_001.pt
-                ├── patch_002.pt
+                ├── patch_001.jpg
+                ├── patch_002.jpg
                 └── ...
         └── monitor
-                ├── patch_001.pt
-                ├── patch_002.pt
+                ├── patch_001.jpg
+                ├── patch_002.jpg
                 └── ...
 ```
 
@@ -80,16 +82,16 @@ ROOT/
                 ├── patch_002.png
                 └── ...
         └── val
-                ├── patch_001.pt
-                ├── patch_002.pt
+                ├── patch_001.jpg
+                ├── patch_002.jpg
                 └── ...
         └── test
-                ├── patch_001.pt
-                ├── patch_002.pt
+                ├── patch_001.jpg
+                ├── patch_002.jpg
                 └── ...
         └── monitor
-                ├── patch_001.pt
-                ├── patch_002.pt
+                ├── patch_001.jpg
+                ├── patch_002.jpg
                 └── ...
 ```
 
