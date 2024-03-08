@@ -1,11 +1,7 @@
-flask
-flask-sock
-flask-socketio
-flask-sqlalchemy
 shapely
 pandas
 numpy
-tensorflow
+tensorflow==2.6
 opencv-python
 openslide-python
 matplotlib

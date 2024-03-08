@@ -22,9 +22,8 @@ class Unet256(Base):
             os.mkdir(self.checkpoint_image_path)
 
     def call(self, inputs):
-        x2_ = self.Generator(inputs)
+        x2_ = self.generator(inputs)
         return x2_
-
 
     def downsample(self, filters, size, apply_batchnorm=True):
         initializer = tf.random_normal_initializer(0., 0.02)
