@@ -1,4 +1,4 @@
-from models.base import Base
+from models.unetBase import unetBase
 import tensorflow as tf
 import time
 import datetime
@@ -11,10 +11,10 @@ import numpy as np
 OUTPUT_CHANNELS = 3
 LAMBDA = 100
 
-class Unet256(Base):
+class unet256(unetBase):
 
     def __init__(self, experiment_id='undefined_experiment', checkpntpath = './checkpoint_image_path/',**kwargs):
-        Base.__init__(self, **kwargs)
+        unetBase.__init__(self, **kwargs)
         self.generator = self.Generator()
         self.checkpoint_image_path = checkpntpath
         self.experiment_id = experiment_id
@@ -108,6 +108,3 @@ class Unet256(Base):
         x = last(x)
 
         return tf.keras.Model(inputs=inputs, outputs=x)
-
-
-

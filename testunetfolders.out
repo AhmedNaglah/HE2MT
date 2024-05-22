@@ -1,0 +1,311 @@
+checkpoint_image_path
+eval
+InferenceGAN.ipynb
+libs
+models
+README.md
+requirements.txt
+runHE2MT.py
+runSlurm.sh
+runSlurmUnet.sh
+static
+testunetfolders.out
+utils
+
+Currently Loaded Modules:
+  1) ufrc   2) conda/24.3.0
+
+ 
+
+2024-05-21 16:34:30.451357: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-05-21 16:34:33.178842: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2024-05-21 16:34:43.819787: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2024-05-21 16:34:43.887328: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-05-21 16:34:49.289278: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-05-21 16:34:59.679110: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1960] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2024-05-21 16:35:06.779319: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+2024-05-21 16:39:30.149240: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+2024-05-21 16:39:35.316101: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+2024-05-21 16:39:39.204517: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+2024-05-21 16:43:27.385490: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+2024-05-21 16:43:32.536084: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+/orange/pinaki.sarder/ahmed.naglah/codes/HE2MT/models/unetBase.py:296: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  k.models.save_model(self.generator, os.path.join(self.modelSave, f'{self.experiment_id}_{epoch}_old.h5'), save_format='h5')
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+/blue/pinaki.sarder/ahmed.naglah/conda/envs/wsi/lib/python3.10/site-packages/keras/src/engine/training.py:3000: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2024-05-21 16:43:43.379339: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+2024-05-21 16:48:05.390789: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+2024-05-21 16:48:10.543601: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+/orange/pinaki.sarder/ahmed.naglah/codes/HE2MT/models/unetBase.py:296: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  k.models.save_model(self.generator, os.path.join(self.modelSave, f'{self.experiment_id}_{epoch}_old.h5'), save_format='h5')
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+/blue/pinaki.sarder/ahmed.naglah/conda/envs/wsi/lib/python3.10/site-packages/keras/src/engine/training.py:3000: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2024-05-21 16:48:19.239502: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+2024-05-21 16:52:28.940471: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+2024-05-21 16:52:34.089034: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+/orange/pinaki.sarder/ahmed.naglah/codes/HE2MT/models/unetBase.py:296: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  k.models.save_model(self.generator, os.path.join(self.modelSave, f'{self.experiment_id}_{epoch}_old.h5'), save_format='h5')
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+/blue/pinaki.sarder/ahmed.naglah/conda/envs/wsi/lib/python3.10/site-packages/keras/src/engine/training.py:3000: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2024-05-21 16:52:43.081480: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+2024-05-21 16:56:34.930398: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+2024-05-21 16:56:40.081422: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+/orange/pinaki.sarder/ahmed.naglah/codes/HE2MT/models/unetBase.py:296: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  k.models.save_model(self.generator, os.path.join(self.modelSave, f'{self.experiment_id}_{epoch}_old.h5'), save_format='h5')
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+/blue/pinaki.sarder/ahmed.naglah/conda/envs/wsi/lib/python3.10/site-packages/keras/src/engine/training.py:3000: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2024-05-21 16:56:48.724399: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+2024-05-21 17:01:11.035307: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+2024-05-21 17:01:16.190520: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+/orange/pinaki.sarder/ahmed.naglah/codes/HE2MT/models/unetBase.py:296: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  k.models.save_model(self.generator, os.path.join(self.modelSave, f'{self.experiment_id}_{epoch}_old.h5'), save_format='h5')
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+/blue/pinaki.sarder/ahmed.naglah/conda/envs/wsi/lib/python3.10/site-packages/keras/src/engine/training.py:3000: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2024-05-21 17:01:25.137319: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+2024-05-21 17:05:47.217717: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+2024-05-21 17:05:52.363678: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+/orange/pinaki.sarder/ahmed.naglah/codes/HE2MT/models/unetBase.py:296: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  k.models.save_model(self.generator, os.path.join(self.modelSave, f'{self.experiment_id}_{epoch}_old.h5'), save_format='h5')
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+/blue/pinaki.sarder/ahmed.naglah/conda/envs/wsi/lib/python3.10/site-packages/keras/src/engine/training.py:3000: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2024-05-21 17:06:02.148693: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+2024-05-21 17:09:48.693590: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+2024-05-21 17:09:53.898352: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+/orange/pinaki.sarder/ahmed.naglah/codes/HE2MT/models/unetBase.py:296: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  k.models.save_model(self.generator, os.path.join(self.modelSave, f'{self.experiment_id}_{epoch}_old.h5'), save_format='h5')
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+/blue/pinaki.sarder/ahmed.naglah/conda/envs/wsi/lib/python3.10/site-packages/keras/src/engine/training.py:3000: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2024-05-21 17:10:02.621271: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+2024-05-21 17:13:49.233181: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+2024-05-21 17:13:54.378093: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+/orange/pinaki.sarder/ahmed.naglah/codes/HE2MT/models/unetBase.py:296: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  k.models.save_model(self.generator, os.path.join(self.modelSave, f'{self.experiment_id}_{epoch}_old.h5'), save_format='h5')
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+/blue/pinaki.sarder/ahmed.naglah/conda/envs/wsi/lib/python3.10/site-packages/keras/src/engine/training.py:3000: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2024-05-21 17:14:03.193414: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+2024-05-21 17:18:25.184888: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+2024-05-21 17:18:30.358413: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+/orange/pinaki.sarder/ahmed.naglah/codes/HE2MT/models/unetBase.py:296: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  k.models.save_model(self.generator, os.path.join(self.modelSave, f'{self.experiment_id}_{epoch}_old.h5'), save_format='h5')
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+/blue/pinaki.sarder/ahmed.naglah/conda/envs/wsi/lib/python3.10/site-packages/keras/src/engine/training.py:3000: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+/orange/pinaki.sarder/ahmed.naglah/codes/HE2MT/models/unetBase.py:296: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  k.models.save_model(self.generator, os.path.join(self.modelSave, f'{self.experiment_id}_{epoch}_old.h5'), save_format='h5')
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+/blue/pinaki.sarder/ahmed.naglah/conda/envs/wsi/lib/python3.10/site-packages/keras/src/engine/training.py:3000: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2024-05-21 17:18:45.369431: I tensorflow/core/grappler/optimizers/data/replicate_on_split.cc:32] Running replicate on split optimization
+/orange/pinaki.sarder/ahmed.naglah/codes/HE2MT/libs/misc/z_helpers_metric.py:115: RuntimeWarning: invalid value encountered in scalar divide
+  return 2*ints/(np.sum(union)+ints)
+
+#################################
+CondGAN Training
+.................................
+.... Experiment Code: testunetfolders ......
+.................................
+HEADER: gen_total_loss, gen_gan_loss, gen_l1_loss, disc_loss
+.................................
+.................................
+.................................
+Epoch Started .... Time: 1716323706.281603, Epoch # 0
+Processing Batches... Batch #: 0, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.9772941470146179, disc_loss:0
+Processing Batches... Batch #: 20, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.6102156639099121, disc_loss:0
+Processing Batches... Batch #: 40, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.40837156772613525, disc_loss:0
+Processing Batches... Batch #: 60, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.598555326461792, disc_loss:0
+Processing Batches... Batch #: 80, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.2132343053817749, disc_loss:0
+Processing Batches... Batch #: 100, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.6979808807373047, disc_loss:0
+Processing Batches... Batch #: 120, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.2164020538330078, disc_loss:0
+Processing Batches... Batch #: 140, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.021861642599105835, disc_loss:0
+Processing Batches... Batch #: 160, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 1.3686423301696777, disc_loss:0
+Processing Batches... Batch #: 180, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.1721341758966446, disc_loss:0
+Processing Epochs... Line 1 Training Loss--> Epoch #: 0, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.48042237758636475, disc_loss:0
+Processing Epochs... Line 2 Validation Loss--> Epoch #: 0, Experiment_ID: testunetfolders,gen_total_loss_val: 0.0, gen_gan_loss_val: 0.0, gen_l1_loss_val: 0.28707337379455566, disc_loss_val:0.0
+Epoch Started .... Time: 1716323979.2004786, Epoch # 1
+Processing Batches... Batch #: 0, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.13226300477981567, disc_loss:0
+Processing Batches... Batch #: 20, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.2641332447528839, disc_loss:0
+Processing Batches... Batch #: 40, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.16545291244983673, disc_loss:0
+Processing Batches... Batch #: 60, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.11561679095029831, disc_loss:0
+Processing Batches... Batch #: 80, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.8724496960639954, disc_loss:0
+Processing Batches... Batch #: 100, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 1.675237774848938, disc_loss:0
+Processing Batches... Batch #: 120, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.22206902503967285, disc_loss:0
+Processing Batches... Batch #: 140, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.11778027564287186, disc_loss:0
+Processing Batches... Batch #: 160, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.07460109144449234, disc_loss:0
+Processing Batches... Batch #: 180, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.19925570487976074, disc_loss:0
+Processing Epochs... Line 1 Training Loss--> Epoch #: 1, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.017600899562239647, disc_loss:0
+Processing Epochs... Line 2 Validation Loss--> Epoch #: 1, Experiment_ID: testunetfolders,gen_total_loss_val: 0.0, gen_gan_loss_val: 0.0, gen_l1_loss_val: 0.27722325921058655, disc_loss_val:0.0
+Epoch Started .... Time: 1716324223.352528, Epoch # 2
+Processing Batches... Batch #: 0, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.2672596275806427, disc_loss:0
+Processing Batches... Batch #: 20, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 1.2257894277572632, disc_loss:0
+Processing Batches... Batch #: 40, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.19248445332050323, disc_loss:0
+Processing Batches... Batch #: 60, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.3030310273170471, disc_loss:0
+Processing Batches... Batch #: 80, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.35412195324897766, disc_loss:0
+Processing Batches... Batch #: 100, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.10270663350820541, disc_loss:0
+Processing Batches... Batch #: 120, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.15580280125141144, disc_loss:0
+Processing Batches... Batch #: 140, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 1.2170127630233765, disc_loss:0
+Processing Batches... Batch #: 160, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.18162494897842407, disc_loss:0
+Processing Batches... Batch #: 180, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.24652321636676788, disc_loss:0
+Processing Epochs... Line 1 Training Loss--> Epoch #: 2, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.09589046984910965, disc_loss:0
+Processing Epochs... Line 2 Validation Loss--> Epoch #: 2, Experiment_ID: testunetfolders,gen_total_loss_val: 0.0, gen_gan_loss_val: 0.0, gen_l1_loss_val: 0.2817499339580536, disc_loss_val:0.0
+Epoch Started .... Time: 1716324499.23325, Epoch # 3
+Processing Batches... Batch #: 0, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.9378620982170105, disc_loss:0
+Processing Batches... Batch #: 20, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.3486854135990143, disc_loss:0
+Processing Batches... Batch #: 40, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.08049491792917252, disc_loss:0
+Processing Batches... Batch #: 60, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.2929522693157196, disc_loss:0
+Processing Batches... Batch #: 80, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 1.2974328994750977, disc_loss:0
+Processing Batches... Batch #: 100, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.8818541169166565, disc_loss:0
+Processing Batches... Batch #: 120, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.0024998795706778765, disc_loss:0
+Processing Batches... Batch #: 140, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.08972958475351334, disc_loss:0
+Processing Batches... Batch #: 160, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.0822555422782898, disc_loss:0
+Processing Batches... Batch #: 180, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.5199306607246399, disc_loss:0
+Processing Epochs... Line 1 Training Loss--> Epoch #: 3, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.11433964967727661, disc_loss:0
+Processing Epochs... Line 2 Validation Loss--> Epoch #: 3, Experiment_ID: testunetfolders,gen_total_loss_val: 0.0, gen_gan_loss_val: 0.0, gen_l1_loss_val: 0.27961185574531555, disc_loss_val:0.0
+Epoch Started .... Time: 1716324763.0784996, Epoch # 4
+Processing Batches... Batch #: 0, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.19131745398044586, disc_loss:0
+Processing Batches... Batch #: 20, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.054177772253751755, disc_loss:0
+Processing Batches... Batch #: 40, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.1682714968919754, disc_loss:0
+Processing Batches... Batch #: 60, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.10762104392051697, disc_loss:0
+Processing Batches... Batch #: 80, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.17693717777729034, disc_loss:0
+Processing Batches... Batch #: 100, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.001593157765455544, disc_loss:0
+Processing Batches... Batch #: 120, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.05933889374136925, disc_loss:0
+Processing Batches... Batch #: 140, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 1.0749812126159668, disc_loss:0
+Processing Batches... Batch #: 160, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.284905344247818, disc_loss:0
+Processing Batches... Batch #: 180, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.18145592510700226, disc_loss:0
+Processing Epochs... Line 1 Training Loss--> Epoch #: 4, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.9355846047401428, disc_loss:0
+Processing Epochs... Line 2 Validation Loss--> Epoch #: 4, Experiment_ID: testunetfolders,gen_total_loss_val: 0.0, gen_gan_loss_val: 0.0, gen_l1_loss_val: 0.27930277585983276, disc_loss_val:0.0
+Epoch Started .... Time: 1716325008.7084043, Epoch # 5
+Processing Batches... Batch #: 0, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.007207222282886505, disc_loss:0
+Processing Batches... Batch #: 20, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.17317014932632446, disc_loss:0
+Processing Batches... Batch #: 40, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.2111697643995285, disc_loss:0
+Processing Batches... Batch #: 60, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.2597864866256714, disc_loss:0
+Processing Batches... Batch #: 80, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.2538944184780121, disc_loss:0
+Processing Batches... Batch #: 100, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.14216943085193634, disc_loss:0
+Processing Batches... Batch #: 120, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.1270270198583603, disc_loss:0
+Processing Batches... Batch #: 140, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.29201820492744446, disc_loss:0
+Processing Batches... Batch #: 160, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.1846880316734314, disc_loss:0
+Processing Batches... Batch #: 180, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.445028156042099, disc_loss:0
+Processing Epochs... Line 1 Training Loss--> Epoch #: 5, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.11435245722532272, disc_loss:0
+Processing Epochs... Line 2 Validation Loss--> Epoch #: 5, Experiment_ID: testunetfolders,gen_total_loss_val: 0.0, gen_gan_loss_val: 0.0, gen_l1_loss_val: 0.2801903188228607, disc_loss_val:0.0
+Epoch Started .... Time: 1716325285.1345387, Epoch # 6
+Processing Batches... Batch #: 0, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.548443078994751, disc_loss:0
+Processing Batches... Batch #: 20, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.1908441036939621, disc_loss:0
+Processing Batches... Batch #: 40, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.2436933070421219, disc_loss:0
+Processing Batches... Batch #: 60, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 1.2755378484725952, disc_loss:0
+Processing Batches... Batch #: 80, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.12546172738075256, disc_loss:0
+Processing Batches... Batch #: 100, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.16239164769649506, disc_loss:0
+Processing Batches... Batch #: 120, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.08657161146402359, disc_loss:0
+Processing Batches... Batch #: 140, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.11500591039657593, disc_loss:0
+Processing Batches... Batch #: 160, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.2667090594768524, disc_loss:0
+Processing Batches... Batch #: 180, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.1875244826078415, disc_loss:0
+Processing Epochs... Line 1 Training Loss--> Epoch #: 6, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.12363624572753906, disc_loss:0
+Processing Epochs... Line 2 Validation Loss--> Epoch #: 6, Experiment_ID: testunetfolders,gen_total_loss_val: 0.0, gen_gan_loss_val: 0.0, gen_l1_loss_val: 0.2624042332172394, disc_loss_val:0.0
+Epoch Started .... Time: 1716325562.1457984, Epoch # 7
+Processing Batches... Batch #: 0, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.393296480178833, disc_loss:0
+Processing Batches... Batch #: 20, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.30528366565704346, disc_loss:0
+Processing Batches... Batch #: 40, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.29449447989463806, disc_loss:0
+Processing Batches... Batch #: 60, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 1.7669340372085571, disc_loss:0
+Processing Batches... Batch #: 80, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.018380166962742805, disc_loss:0
+Processing Batches... Batch #: 100, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.8531495928764343, disc_loss:0
+Processing Batches... Batch #: 120, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.14593811333179474, disc_loss:0
+Processing Batches... Batch #: 140, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.2026786059141159, disc_loss:0
+Processing Batches... Batch #: 160, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.7135538458824158, disc_loss:0
+Processing Batches... Batch #: 180, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.20467649400234222, disc_loss:0
+Processing Epochs... Line 1 Training Loss--> Epoch #: 7, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.1985725313425064, disc_loss:0
+Processing Epochs... Line 2 Validation Loss--> Epoch #: 7, Experiment_ID: testunetfolders,gen_total_loss_val: 0.0, gen_gan_loss_val: 0.0, gen_l1_loss_val: 0.2616513967514038, disc_loss_val:0.0
+Epoch Started .... Time: 1716325802.6176023, Epoch # 8
+Processing Batches... Batch #: 0, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.2772495448589325, disc_loss:0
+Processing Batches... Batch #: 20, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.27863022685050964, disc_loss:0
+Processing Batches... Batch #: 40, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.5173191428184509, disc_loss:0
+Processing Batches... Batch #: 60, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.1467905193567276, disc_loss:0
+Processing Batches... Batch #: 80, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.8853864669799805, disc_loss:0
+Processing Batches... Batch #: 100, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.5070760250091553, disc_loss:0
+Processing Batches... Batch #: 120, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.9219196438789368, disc_loss:0
+Processing Batches... Batch #: 140, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.5606851577758789, disc_loss:0
+Processing Batches... Batch #: 160, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.1869741529226303, disc_loss:0
+Processing Batches... Batch #: 180, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.17820435762405396, disc_loss:0
+Processing Epochs... Line 1 Training Loss--> Epoch #: 8, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.16935765743255615, disc_loss:0
+Processing Epochs... Line 2 Validation Loss--> Epoch #: 8, Experiment_ID: testunetfolders,gen_total_loss_val: 0.0, gen_gan_loss_val: 0.0, gen_l1_loss_val: 0.25881922245025635, disc_loss_val:0.0
+Epoch Started .... Time: 1716326043.1847723, Epoch # 9
+Processing Batches... Batch #: 0, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.12095383554697037, disc_loss:0
+Processing Batches... Batch #: 20, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.8458492755889893, disc_loss:0
+Processing Batches... Batch #: 40, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 1.3759769201278687, disc_loss:0
+Processing Batches... Batch #: 60, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.14767414331436157, disc_loss:0
+Processing Batches... Batch #: 80, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.056637734174728394, disc_loss:0
+Processing Batches... Batch #: 100, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 1.0757606029510498, disc_loss:0
+Processing Batches... Batch #: 120, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.41872039437294006, disc_loss:0
+Processing Batches... Batch #: 140, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 1.0908704996109009, disc_loss:0
+Processing Batches... Batch #: 160, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 1.1989936828613281, disc_loss:0
+Processing Batches... Batch #: 180, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.22087788581848145, disc_loss:0
+Processing Epochs... Line 1 Training Loss--> Epoch #: 9, Experiment_ID: testunetfolders, gen_total_loss: 0, gen_gan_loss: 0, gen_l1_loss: 0.08312392234802246, disc_loss:0
+Processing Epochs... Line 2 Validation Loss--> Epoch #: 9, Experiment_ID: testunetfolders,gen_total_loss_val: 0.0, gen_gan_loss_val: 0.0, gen_l1_loss_val: 0.2578032314777374, disc_loss_val:0.0
+Processing Testing... Image #: 0, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 1.0, dice:nan
+Processing Testing... Image #: 1, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 0.999664306640625, dice:nan
+Processing Testing... Image #: 2, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 0.999603271484375, dice:nan
+Processing Testing... Image #: 3, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 0.999420166015625, dice:nan
+Processing Testing... Image #: 4, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 0.9993896484375, dice:nan
+Processing Testing... Image #: 5, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 0.9992828369140625, dice:nan
+Processing Testing... Image #: 6, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 0.999969482421875, dice:nan
+Processing Testing... Image #: 7, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 0.9997406005859375, dice:nan
+Processing Testing... Image #: 8, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 0.9999542236328125, dice:nan
+Processing Testing... Image #: 9, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 0.9999847412109375, dice:nan
+Processing Testing... Image #: 10, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 0.9996337890625, dice:nan
+Processing Testing... Image #: 11, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 1.0, dice:nan
+Processing Testing... Image #: 12, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 1.0, dice:nan
+Processing Testing... Image #: 13, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 0.9998779296875, dice:nan
+Processing Testing... Image #: 14, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 1.0, dice:nan
+Processing Testing... Image #: 15, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 0.999176025390625, dice:nan
+Processing Testing... Image #: 16, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 0.999481201171875, dice:nan
+Processing Testing... Image #: 17, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 0.9995574951171875, dice:nan
+Processing Testing... Image #: 18, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 0.999176025390625, dice:nan
+Processing Testing... Image #: 19, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 0.999481201171875, dice:nan
+Processing Testing... Image #: 20, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 0.999969482421875, dice:nan
+Processing Testing... Image #: 21, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 0.999542236328125, dice:nan
+Processing Testing... Image #: 22, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 0.997955322265625, dice:nan
+Processing Testing... Image #: 23, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 0.999481201171875, dice:nan
+Processing Testing... Image #: 24, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 0.9998016357421875, dice:nan
+Processing Testing... Image #: 25, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 1.0, dice:nan
+Processing Testing... Image #: 26, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 0.999725341796875, dice:nan
+Processing Testing... Image #: 27, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 0.99993896484375, dice:nan
+Processing Testing... Image #: 28, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 0.9998779296875, dice:nan
+Processing Testing... Image #: 29, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 1.0, dice:nan
+Processing Testing... Image #: 30, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 0.9992828369140625, dice:nan
+Processing Testing... Image #: 31, Experiment_ID: testunetfolders, mi: -1, nmi: -1, acc: 0.9996337890625, dice:nan
+

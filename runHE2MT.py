@@ -49,6 +49,12 @@ def main():
             monitor_dataset = monitor_dataset.map(load_image)
             monitor_dataset = monitor_dataset.batch(BATCH_SIZE)
 
+            model = myClass()
+            model.compile(optimizer=OPTIMIZER, lamda=LAMDA, learning_rate=LR)
+
+            model.fit(train_dataset, val_dataset, monitor_dataset, epochs=EPOCHS, experiment_id=EXPERIMENT_ID, dataroot=PATH, monitor_freq=MONITORFREQ, checkpointfreq=CHECKPOINTFREQ, modelsavefreq = MODELSAVEFREQ)
+            model.test(test_dataset, experiment_id=EXPERIMENT_ID, dataroot=PATH)
+
         if MODEL.startswith('cycleGAN'):
             trainA = tf.data.Dataset.list_files(f'{PATH}trainA/*.png')
             trainB = tf.data.Dataset.list_files(f'{PATH}trainB/*.png')
@@ -70,10 +76,32 @@ def main():
             test_dataset = test_dataset.batch(BATCH_SIZE)
             monitor_dataset = monitor_dataset.map(load_image)
             monitor_dataset = monitor_dataset.batch(BATCH_SIZE)
-        model = myClass()
-        model.compile(optimizer=OPTIMIZER, lamda=LAMDA, learning_rate=LR)
-        model.fit(train_dataset, val_dataset, monitor_dataset, epochs=EPOCHS, experiment_id=EXPERIMENT_ID, dataroot=PATH, monitor_freq=MONITORFREQ, checkpointfreq=CHECKPOINTFREQ, modelsavefreq = MODELSAVEFREQ)
-        model.test(test_dataset, experiment_id=EXPERIMENT_ID, dataroot=PATH)
+
+            model = myClass()
+            model.compile(optimizer=OPTIMIZER, lamda=LAMDA, learning_rate=LR)
+            model.fit(train_dataset, val_dataset, monitor_dataset, epochs=EPOCHS, experiment_id=EXPERIMENT_ID, dataroot=PATH, monitor_freq=MONITORFREQ, checkpointfreq=CHECKPOINTFREQ, modelsavefreq = MODELSAVEFREQ)
+            model.test(test_dataset, experiment_id=EXPERIMENT_ID, dataroot=PATH)
+
+        if MODEL.startswith('unet'):
+            train_dataset = tf.data.Dataset.list_files(f'{PATH}train/*.jpg')
+            val_dataset = tf.data.Dataset.list_files(f'{PATH}val/*.jpg')
+            test_dataset = tf.data.Dataset.list_files(f'{PATH}test/*.jpg')
+            monitor_dataset = tf.data.Dataset.list_files(f'{PATH}monitor/*.jpg')
+
+            train_dataset = train_dataset.map(load_image)
+            train_dataset = train_dataset.batch(BATCH_SIZE)
+            val_dataset = val_dataset.map(load_image)
+            val_dataset = val_dataset.batch(BATCH_SIZE)
+            test_dataset = test_dataset.map(load_image_test)
+            test_dataset = test_dataset.batch(BATCH_SIZE)
+            monitor_dataset = monitor_dataset.map(load_image)
+            monitor_dataset = monitor_dataset.batch(BATCH_SIZE)
+
+            model = myClass()
+            model.compile(optimizer=OPTIMIZER, lamda=LAMDA, learning_rate=LR)
+
+            model.fit(train_dataset, val_dataset, monitor_dataset, epochs=EPOCHS, experiment_id=EXPERIMENT_ID, dataroot=PATH, monitor_freq=MONITORFREQ, checkpointfreq=CHECKPOINTFREQ, modelsavefreq = MODELSAVEFREQ)
+            model.test(test_dataset, experiment_id=EXPERIMENT_ID, dataroot=PATH)
     except Exception as Argument: 
         logging.exception(f"Exception {Argument}")
 
